@@ -22,7 +22,14 @@ public class Player : MonoBehaviour
     public void Initialize(int _id, string _username)
     {
         id = _id;
-        username = _username;
+        if (_username == "")
+        {
+            username = "NoUsername" + id;
+        }
+        else
+        {
+            username = _username;
+        }
 
         inputs = new bool[4];
     }
