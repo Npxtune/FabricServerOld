@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         id = _id;
         if (_username == "")
         {
+            // Setting a username if none is defined
             username = "NoUsername" + id;
         }
         else
